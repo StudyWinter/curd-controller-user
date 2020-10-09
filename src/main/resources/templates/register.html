@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+
+<h2>欢迎来到注册页面</h2>
+
+<!--添加页面-->
+<div>
+    <form action="/addUser" method="post">
+        <label>用户名</label>
+        <input type="text" name="userName" placeholder="用户名">
+        <label>密码</label>
+        <input type="password" name="passWord" placeholder="密码">
+        <input type="submit" value="注册">
+    </form>
+</div>
+
+<!--删除页面-->
+<div>
+    <form action="/delUser" method="post">
+        <label>请输入要删除的用户</label>
+        <input type="text" name="userName" placeholder="用户名">
+        <input type="submit" value="删除用户">
+
+    </form>
+</div>
+
+<!--修改用户信息-->
+<div>
+    <form action="/updateUser" method="post">
+        <label>用户名</label>
+        <input type="text" name="userName" placeholder="用户名">
+        <label>密码</label>
+        <input type="password" name="passWord" placeholder="密码">
+        <input type="submit" value="修改用户信息">
+    </form>
+</div>
+
+
+
+</body>
+</html>
